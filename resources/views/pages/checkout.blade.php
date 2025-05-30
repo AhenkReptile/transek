@@ -24,12 +24,7 @@
     <div class="flex-1 pl-0 sm:pl-6">
       <h3 class="text-white font-semibold text-[18px] mb-4">Payment Information</h3>
       <div class="mb-4">
-        <label class="text-white text-[14px]">Payment Method</label>
-        <select name="payment_method" class="w-full p-2 mt-1 rounded-md bg-[#2a2a2a] text-white border border-[#ff4a00] focus:outline-none focus:ring-2 focus:ring-[#ff4a00]">
-          <option value="credit_card">Credit Card</option>
-          <option value="paypal">PayPal</option>
-          <option value="bank_transfer">Bank Transfer</option>
-        </select>
+        <p class="text-grey text-[14px]">Product Name 1x</label>
       </div>
 
       <div class="mb-4">
@@ -37,11 +32,43 @@
         <p class="text-white font-bold text-[20px] mt-1">$99.99</p>
       </div>
 
-      <button type="button" class="w-full bg-[#ff4a00] text-white font-semibold py-2 rounded-md hover:bg-[#e03e00] transition duration-200">
-        Complete Purchase
-      </button>
+      <form method="POST" action="{{ url('/api/payments') }}">
+          @csrf
+          <input type="hidden" name="payer_email" value="fahdira@gmail.com">
+          <input type="hidden" name="description" value="test">
+          <input type="hidden" name="amount" value="20000">
+          <button type="submit" class="w-full bg-[#ff4a00] text-white font-semibold py-2 rounded-md hover:bg-[#e03e00] transition duration-200">
+              Complete Purchase
+          </button>
+      </form>
     </div>
   </div>
 </section>
+<script>
+  document.getElementById('complete-purchase').addEventListener('click', function () {
+      const data = {
+          payer_email: "kaisa@gmail.com",
+          description: "test kaisa",
+          amount: 20000
+      };
 
+      fetch('/api/payments', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json',
+              'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content') // Optional if using Sanctum or CSRF is required
+          },
+          body: JSON.stringify(data)
+      })
+      .then(response => response.json())
+      .then(result => {
+          console.log('Payment created:', result);
+      })
+      .catch(error => {
+          console.error('Error:', error);
+          alert("Something went wrong!");
+      });
+  });
+</script>
 @stop

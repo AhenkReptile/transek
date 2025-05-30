@@ -39,6 +39,7 @@ class PaymentController extends Controller
             $payment->external_id = $create_invoice_request['external_id'];
             $payment->save();
 
+            return redirect($result);
             return response()->json(['link = ' => $result, 'data = ' => $create_invoice_request]);
         } catch (\Xendit\XenditSdkException $e) {
             echo 'Exception when calling InvoiceApi->createInvoice: ', $e->getMessage(), PHP_EOL;
@@ -56,7 +57,6 @@ class PaymentController extends Controller
 
         $payment->status = 'paid';
         $payment->save();
-
         return response()->json(['data = ' => 'Successful']);
     }
 }
