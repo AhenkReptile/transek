@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', [UserController::class, 'home'])->name('home');
+Route::get('/checkout', [UserController::class, 'checkout'])->name('checkout');
+
+Route::get('/login', [AuthController::class, 'login'])->name('login');
