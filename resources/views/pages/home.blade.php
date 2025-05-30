@@ -57,51 +57,61 @@
   </div>
 </section>
 
-<!-- Popular tours section -->
+<!-- Product Section -->
 <section class="max-w-[1200px] mx-auto px-4 mt-20 sm:mt-28">
   <div class="text-center mb-8">
     <p class="text-[10px] sm:text-[12px] text-white/70 mb-1">
-      and get unforgettable emotions
+      and get unforgettable products
     </p>
     <h2 class="text-white font-bold text-[16px] sm:text-[18px] md:text-[20px] tracking-widest uppercase">
-      POPULAR TOURS
+      PRODUCTS
     </h2>
   </div>
   <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-[900px] mx-auto border-b border-white/20 pb-6">
 
-    <!-- Tour 1 -->
+    <!-- Product 1 -->
     <div class="group cursor-pointer">
-      <img alt="Traditional pagoda in Kyoto, Japan at sunset with warm sky" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md"  height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/cb2c15e6-4f12-44f0-a9cb-9891fe1d75bd.jpg" width="300"/>
+    <img alt="Product Image 1" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md border-solid" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/cb2c15e6-4f12-44f0-a9cb-9891fe1d75bd.jpg" width="300"/>
+    <div class="mt-2 text-center">
+        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">PRODUCT №1</h3>
+
+        <!-- Updated Buy Button -->
+        <a href="{{ route('checkout') }}"
+        class="inline-block mt-2 bg-[#ff4a00] text-white text-[10px] sm:text-[12px] font-semibold uppercase px-4 py-2 rounded-full transition-all duration-300 hover:bg-[#ff3600] hover:scale-105 shadow-md">
+        Buy Now
+        </a>
+
+        <p class="text-white/70 text-[8px] sm:text-[10px] mt-1">and get unforgettable</p>
+    </div>
+    </div>
+
+
+    <!-- Product 2 -->
+    <div class="group cursor-pointer">
+      <img alt="Product Image 2" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/721d4280-3ed0-456b-84a2-0b8bca0d0429.jpg" width="300"/>
       <div class="mt-2 text-center">
-        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">TOUR №1</h3>
+        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">PRODUCT №2</h3>
         <a class="text-gray-600 hover:text-gray-800" href="{{ route('checkout') }}">Buy</a>
         <p class="text-white/70 text-[8px] sm:text-[10px] mt-1">and get unforgettable</p>
       </div>
     </div>
 
-    <!-- Tour 2 -->
+    <!-- Product 3 -->
     <div class="group cursor-pointer">
-      <img alt="Japanese castle with tree branches in foreground under cloudy sky" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/721d4280-3ed0-456b-84a2-0b8bca0d0429.jpg" width="300"/>
+      <img alt="Product Image 3" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b7f07e75-13e7-40aa-dbd4-d3ffbd0d2a57.jpg" width="300"/>
       <div class="mt-2 text-center">
-        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">TOUR №2</h3>
+        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">PRODUCT №3</h3>
+        <a class="text-gray-600 hover:text-gray-800" href="{{ route('checkout') }}">Buy</a>
         <p class="text-white/70 text-[8px] sm:text-[10px] mt-1">and get unforgettable</p>
       </div>
     </div>
 
-    <!-- Tour 3 -->
+    <!-- Product 4 -->
     <div class="group cursor-pointer">
-      <img alt="Red pagoda with cherry blossoms in springtime" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b7f07e75-13e7-40aa-dbd4-d3ffbd0d2a57.jpg" width="300"/>
+      <img alt="Product Image 4" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4b748c12-f25c-4086-e6bc-66cdb04ed2ac.jpg" width="300"/>
       <div class="mt-2 text-center">
-        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">TOUR №3</h3>
-        <p class="text-white/70 text-[8px] sm:text-[10px] mt-1">and get unforgettable</p>
-      </div>
-    </div>
-
-    <!-- Tour 4 -->
-    <div class="group cursor-pointer">
-      <img alt="Woman in traditional kimono holding a red umbrella walking on a rainy street" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4b748c12-f25c-4086-e6bc-66cdb04ed2ac.jpg" width="300"/>
-      <div class="mt-2 text-center">
-        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">TOUR №4</h3>
+        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">PRODUCT №4</h3>
+        <a class="text-gray-600 hover:text-gray-800" href="{{ route('checkout') }}">Buy</a>
         <p class="text-white/70 text-[8px] sm:text-[10px] mt-1">and get unforgettable</p>
       </div>
     </div>

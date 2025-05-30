@@ -5,7 +5,7 @@
     <div class="flex items-center space-x-2">
       <div class="w-3 h-3 rounded-full bg-[#ff4a00]"></div>
       <span class="font-bold text-white text-[14px] sm:text-[16px] md:text-[18px]">
-        Bahatam
+        CV. Tunggal Semesta
       </span>
     </div>
 
