@@ -47,17 +47,14 @@ class PaymentController extends Controller
     }
     
     public function webhook(Request $request) {
-        $apiInstance = new InvoiceApi();
-        // return response()->json(['pp = ' =>$request->id]);
-        $getInvoice = $apiInstance->getInvoiceById($request->id);
+        $payment = Payment::orderBy('created_at')->first();
+            // return response()->json(['external_id' => $payment->external_id]);
 
-        $payment == Payment::where('external_id', $request->external_id)->firstOrFail();
-
-        if ($payment->status = 'PAID'){
-            return response()->json(['data'=> 'Payment Already Successful']);
+        if ($payment->status == 'paid'){
+             return response()->json(['data'=> 'Payment Already Successful']);
         }
 
-        $payment->status = strtolower($getInvoice('status'));
+        $payment->status = 'paid';
         $payment->save();
 
         return response()->json(['data = ' => 'Successful']);
