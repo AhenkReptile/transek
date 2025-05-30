@@ -23,17 +23,6 @@
       </a>
     </div>
 
-    <!-- Center text with airplane icon -->
-    <div class="hidden sm:flex flex-col items-center max-w-[180px] md:max-w-[220px] lg:max-w-[280px] text-center">
-      <div class="text-[#ffffff99] text-[10px] md:text-[12px] font-normal tracking-widest uppercase mb-6">
-        A few lines of text and something else interesting for readers
-      </div>
-      <i class="fas fa-plane text-[#ffffff99] text-[28px] mb-6"></i>
-      <a class="text-[10px] md:text-[12px] font-semibold tracking-widest uppercase border-b border-[#ff4a00] pb-0.5 hover:text-[#ff4a00]" href="#">
-        Learn more →
-      </a>
-    </div>
-
     <!-- Right text with airplane icon -->
     <div class="hidden sm:flex flex-col items-center max-w-[180px] md:max-w-[220px] lg:max-w-[280px] text-center">
       <div class="text-[#ffffff99] text-[10px] md:text-[12px] font-normal tracking-widest uppercase mb-6">
@@ -71,9 +60,9 @@
 
     <!-- Product 1 -->
     <div class="group cursor-pointer">
-    <img alt="Product Image 1" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md border-solid" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/cb2c15e6-4f12-44f0-a9cb-9891fe1d75bd.jpg" width="300"/>
+    <img alt="Product Image 1" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md border-solid" height="200" loading="lazy" src="https://static2.jetpens.com/images/a/000/224/224615.jpg?auto=format&blend-align=middle%2Ccenter&blend-alpha=10&blend-mode=difference&blend-size=inherit&blend64=aHR0cHM6Ly9zdGF0aWMxLmpldHBlbnMuY29tL2ltYWdlcy9hc3NldHMvd2F0ZXJtYXJrMi5wbmc&chromasub=444&fm=jpg&mark-align=top%2Cright&mark-alpha=30&mark-scale=16&mark64=aHR0cHM6Ly9zdGF0aWMxLmpldHBlbnMuY29tL2ltYWdlcy9hc3NldHMvd2F0ZXJtYXJrMS5wbmc&q=90&usm=20&w=900&s=4db06beb160c2609d530bb87d0d63ed7" width="300"/>
     <div class="mt-2 text-center">
-        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">PRODUCT №1</h3>
+        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">Uni Kuru Toga Mechanical Pencil</h3>
 
         <!-- Updated Buy Button -->
         <a href="{{ route('checkout') }}"
@@ -88,30 +77,39 @@
 
     <!-- Product 2 -->
     <div class="group cursor-pointer">
-      <img alt="Product Image 2" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/721d4280-3ed0-456b-84a2-0b8bca0d0429.jpg" width="300"/>
+      <img alt="Product Image 2" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md" height="200" loading="lazy" src="https://static2.jetpens.com/images/a/000/224/224623.jpg?auto=format&blend-align=middle%2Ccenter&blend-alpha=10&blend-mode=difference&blend-size=inherit&blend64=aHR0cHM6Ly9zdGF0aWMxLmpldHBlbnMuY29tL2ltYWdlcy9hc3NldHMvd2F0ZXJtYXJrMi5wbmc&chromasub=444&fm=jpg&mark-align=top%2Cright&mark-alpha=30&mark-scale=16&mark64=aHR0cHM6Ly9zdGF0aWMxLmpldHBlbnMuY29tL2ltYWdlcy9hc3NldHMvd2F0ZXJtYXJrMS5wbmc&q=90&usm=20&w=900&s=0a79572e75c5f09be6d116280bc3f218" width="300"/>
       <div class="mt-2 text-center">
-        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">PRODUCT №2</h3>
-        <a class="text-gray-600 hover:text-gray-800" href="{{ route('checkout') }}">Buy</a>
+        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">Sun-Star Tasuno Scissors</h3>
+        <a href="{{ route('checkout') }}"
+            class="inline-block mt-2 bg-[#ff4a00] text-white text-[10px] sm:text-[12px] font-semibold uppercase px-4 py-2 rounded-full transition-all duration-300 hover:bg-[#ff3600] hover:scale-105 shadow-md">
+            Buy Now
+        </a>
         <p class="text-white/70 text-[8px] sm:text-[10px] mt-1">and get unforgettable</p>
       </div>
     </div>
 
     <!-- Product 3 -->
     <div class="group cursor-pointer">
-      <img alt="Product Image 3" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b7f07e75-13e7-40aa-dbd4-d3ffbd0d2a57.jpg" width="300"/>
+      <img alt="Product Image 3" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md" height="200" loading="lazy" src="https://static2.jetpens.com/images/a/000/224/224611.jpg?auto=format&blend-align=middle%2Ccenter&blend-alpha=10&blend-mode=difference&blend-size=inherit&blend64=aHR0cHM6Ly9zdGF0aWMxLmpldHBlbnMuY29tL2ltYWdlcy9hc3NldHMvd2F0ZXJtYXJrMi5wbmc&chromasub=444&fm=jpg&mark-align=top%2Cright&mark-alpha=30&mark-scale=16&mark64=aHR0cHM6Ly9zdGF0aWMxLmpldHBlbnMuY29tL2ltYWdlcy9hc3NldHMvd2F0ZXJtYXJrMS5wbmc&q=90&usm=20&w=900&s=d9e14d3054308382d4b66af94efd7b7a" width="300"/>
       <div class="mt-2 text-center">
-        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">PRODUCT №3</h3>
-        <a class="text-gray-600 hover:text-gray-800" href="{{ route('checkout') }}">Buy</a>
+        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">Midori + Stand Notebook</h3>
+        <a href="{{ route('checkout') }}"
+        class="inline-block mt-2 bg-[#ff4a00] text-white text-[10px] sm:text-[12px] font-semibold uppercase px-4 py-2 rounded-full transition-all duration-300 hover:bg-[#ff3600] hover:scale-105 shadow-md">
+        Buy Now
+        </a>
         <p class="text-white/70 text-[8px] sm:text-[10px] mt-1">and get unforgettable</p>
       </div>
     </div>
 
     <!-- Product 4 -->
     <div class="group cursor-pointer">
-      <img alt="Product Image 4" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4b748c12-f25c-4086-e6bc-66cdb04ed2ac.jpg" width="300"/>
+      <img alt="Product Image 4" class="w-full h-[140px] sm:h-[160px] object-cover rounded-md" height="200" loading="lazy" src="https://static2.jetpens.com/images/a/000/224/224618.jpg?auto=format&blend-align=middle%2Ccenter&blend-alpha=10&blend-mode=difference&blend-size=inherit&blend64=aHR0cHM6Ly9zdGF0aWMxLmpldHBlbnMuY29tL2ltYWdlcy9hc3NldHMvd2F0ZXJtYXJrMi5wbmc&chromasub=444&fm=jpg&mark-align=top%2Cright&mark-alpha=30&mark-scale=16&mark64=aHR0cHM6Ly9zdGF0aWMxLmpldHBlbnMuY29tL2ltYWdlcy9hc3NldHMvd2F0ZXJtYXJrMS5wbmc&q=90&usm=20&w=900&s=cb135b00660c68d09621610e0ce9d5fd" width="300"/>
       <div class="mt-2 text-center">
-        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">PRODUCT №4</h3>
-        <a class="text-gray-600 hover:text-gray-800" href="{{ route('checkout') }}">Buy</a>
+        <h3 class="text-white font-bold text-[12px] sm:text-[14px] tracking-widest uppercase">Pilot Otobaco Pencil Case</h3>
+        <a href="{{ route('checkout') }}"
+        class="inline-block mt-2 bg-[#ff4a00] text-white text-[10px] sm:text-[12px] font-semibold uppercase px-4 py-2 rounded-full transition-all duration-300 hover:bg-[#ff3600] hover:scale-105 shadow-md">
+        Buy Now
+        </a>
         <p class="text-white/70 text-[8px] sm:text-[10px] mt-1">and get unforgettable</p>
       </div>
     </div>
@@ -121,7 +119,7 @@
 
 <!-- Travel and inspire your life section -->
 <section class="relative">
-  <img alt="Mountain range silhouette under a purple and pink starry night sky" class="w-full h-[320px] sm:h-[400px] md:h-[480px] lg:h-[600px] object-cover rounded-md" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/6f41cc98-a921-41cb-f34d-226c6fcd8df6.jpg" width="1200"/>
+  <img alt="Mountain range silhouette under a purple and pink starry night sky" class="w-full h-[320px] sm:h-[400px] md:h-[480px] lg:h-[600px] object-cover rounded-md" height="600" loading="lazy" src="https://images.unsplash.com/photo-1663970206579-c157cba7edda?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8" width="1200"/>
   <div class="absolute top-0 left-0 w-full h-full bg-linear-to-t from-[#121c26cc] to-transparent rounded-md" style="background: linear-gradient(to bottom, rgba(18,28,38,1), transparent);"></div>
   <div class="absolute top-0 left-0 w-full h-full flex flex-col sm:flex-row items-start sm:items-center justify-between px-6 sm:px-10 md:px-16 lg:px-20 pt-10 sm:pt-14 md:pt-20">
 
@@ -140,13 +138,13 @@
 
     <div class="mt-8 sm:mt-0 flex space-x-4 max-w-[600px] overflow-x-auto scrollbar-hide">
       <div class="flex-shrink-0 w-[180px] sm:w-[220px] rounded-md overflow-hidden cursor-pointer relative group">
-        <img alt="Road through rocky mountains with a play button overlay" class="w-full h-[140px] object-cover" height="140" loading="lazy" src="https://storage.googleapis.com/a1aa/image/03d81648-805c-44a8-0b8b-7f9e8c6db080.jpg" width="220"/>
+        <img alt="Road through rocky mountains with a play button overlay" class="w-full h-[140px] object-cover" height="140" loading="lazy" src="https://static2.jetpens.com/images/a/000/224/224634.jpg?auto=format&blend-align=middle%2Ccenter&blend-alpha=10&blend-mode=difference&blend-size=inherit&blend64=aHR0cHM6Ly9zdGF0aWMxLmpldHBlbnMuY29tL2ltYWdlcy9hc3NldHMvd2F0ZXJtYXJrMi5wbmc&chromasub=444&fm=jpg&mark-align=top%2Cright&mark-alpha=30&mark-scale=16&mark64=aHR0cHM6Ly9zdGF0aWMxLmpldHBlbnMuY29tL2ltYWdlcy9hc3NldHMvd2F0ZXJtYXJrMS5wbmc&q=90&usm=20&w=900&s=e29be9727e4529639a05ad9a68fc0dbd" width="220"/>
         <div class="absolute inset-0 flex items-center justify-center text-white text-[32px] opacity-80 group-hover:opacity-100 transition-opacity">
           <i class="fas fa-play-circle"></i>
         </div>
       </div>
       <div class="flex-shrink-0 w-[180px] sm:w-[220px] rounded-md overflow-hidden cursor-pointer">
-        <img alt="Snowy mountains and lake landscape with clear sky" class="w-full h-[140px] object-cover" height="140" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a8377fc7-026e-4a42-4036-509267ce4e8f.jpg" width="220"/>
+        <img alt="Snowy mountains and lake landscape with clear sky" class="w-full h-[140px] object-cover" height="140" loading="lazy" src="https://static2.jetpens.com/images/a/000/224/224613.jpg?auto=format&blend-align=middle%2Ccenter&blend-alpha=10&blend-mode=difference&blend-size=inherit&blend64=aHR0cHM6Ly9zdGF0aWMxLmpldHBlbnMuY29tL2ltYWdlcy9hc3NldHMvd2F0ZXJtYXJrMi5wbmc&chromasub=444&fm=jpg&mark-align=top%2Cright&mark-alpha=30&mark-scale=16&mark64=aHR0cHM6Ly9zdGF0aWMxLmpldHBlbnMuY29tL2ltYWdlcy9hc3NldHMvd2F0ZXJtYXJrMS5wbmc&q=90&usm=20&w=900&s=4c6b897b1267197dbec6538c4a849795" width="220"/>
       </div>
     </div>
   </div>

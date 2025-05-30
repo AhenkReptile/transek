@@ -27,6 +27,9 @@
       <a href="{{ route('login') }}" class="text-white/70 hover:text-white text-[14px] sm:text-[16px] font-semibold">
         Login
       </a>
+      <a href="{{ route('register') }}" class="bg-[#ff4a00] text-white font-semibold py-1 px-4 rounded-md hover:bg-[#e03e00] transition duration-200 text-[14px] sm:text-[16px]">
+        Register
+      </a>
     </div>
 
   </nav>

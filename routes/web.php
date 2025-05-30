@@ -18,3 +18,4 @@ Route::get('/', [UserController::class, 'home'])->name('home');
 Route::get('/checkout', [UserController::class, 'checkout'])->name('checkout');
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/register', [AuthController::class, 'register'])->name('register');

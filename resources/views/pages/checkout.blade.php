@@ -2,7 +2,7 @@
 @section('content')
 
 <!-- Checkout Section -->
-<section class="max-w-[1200px] mx-auto px-4 mt-20 sm:mt-28">
+<section class="max-w-[800px] mx-auto px-4 mt-20 sm:mt-28">
   <div class="text-center mb-8">
     <h2 class="text-white font-bold text-[24px] sm:text-[28px] md:text-[32px] tracking-widest uppercase">
       CHECKOUT
@@ -15,9 +15,9 @@
   <div class="flex flex-col sm:flex-row bg-[#1a1a1a] p-6 rounded-md shadow-lg">
     <!-- Left Side: Product Image and Description -->
     <div class="flex-1 mb-6 sm:mb-0">
-      <img alt="Product Image" class="w-full h-[200px] object-cover rounded-md" src="https://storage.googleapis.com/a1aa/image/cb2c15e6-4f12-44f0-a9cb-9891fe1d75bd.jpg" />
-      <h3 class="text-white font-semibold text-[18px] mt-4">Product Name</h3>
-      <p class="text-white/70 text-[14px] mt-2">This is a brief description of the product you have chosen. It highlights the key features and benefits.</p>
+      <img alt="Product Image" class="w-full h-[200px] object-cover rounded-md" src="https://static2.jetpens.com/images/a/000/224/224615.jpg?auto=format&blend-align=middle%2Ccenter&blend-alpha=10&blend-mode=difference&blend-size=inherit&blend64=aHR0cHM6Ly9zdGF0aWMxLmpldHBlbnMuY29tL2ltYWdlcy9hc3NldHMvd2F0ZXJtYXJrMi5wbmc&chromasub=444&fm=jpg&mark-align=top%2Cright&mark-alpha=30&mark-scale=16&mark64=aHR0cHM6Ly9zdGF0aWMxLmpldHBlbnMuY29tL2ltYWdlcy9hc3NldHMvd2F0ZXJtYXJrMS5wbmc&q=90&usm=20&w=900&s=4db06beb160c2609d530bb87d0d63ed7" />
+      <h3 class="text-white font-semibold text-[18px] mt-4">Uni Kuru Toga Mechanical Pencil</h3>
+      <p class="text-white/70 text-[14px] mt-2">The Uni Kuru Toga ensures you always write with a sharp point. Its lead rotation mechanism turns the lead each time the pencil is lifted from the paper, helping it wear down evenly and preventing a slanted edge that can create thick and smudgy lines.</p>
     </div>
 
     <!-- Right Side: Payment Information -->
@@ -29,7 +29,7 @@
 
       <div class="mb-4">
         <label class="text-white text-[14px]">Total Price</label>
-        <p class="text-white font-bold text-[20px] mt-1">$99.99</p>
+        <p class="text-white font-bold text-[20px] mt-1">$34.99</p>
       </div>
 
       <form method="POST" action="{{ url('/api/payments') }}">
